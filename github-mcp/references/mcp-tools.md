@@ -51,11 +51,49 @@ mcporter call github.tool_name parameter:value
 For example:
 ```bash
 mcporter call github.create_repository name:"my-repo" description:"Test repo" private:true
-mcporter call github.search_repositories query:"user:HengWeiBin is:private"
-mcporter call github.create_issue owner:"HengWeiBin" repo:"myrepo" title:"Bug fix" body:"Fix this issue"
+mcporter call github.search_repositories query:"user:<your-github-username> is:private"
+mcporter call github.create_issue owner:"<your-github-username>" repo:"myrepo" title:"Bug fix" body:"Fix this issue"
 ```
 
 To view detailed documentation for all tools:
 ```bash
 mcporter list github --schema
 ```
+
+## Parameter Reference
+
+### Common Parameters
+
+Most tools accept these common parameters:
+
+- `owner` - Repository owner (your GitHub username or organization)
+- `repo` - Repository name
+- `branch` - Branch name (e.g., "main", "develop")
+- `title` - Title for issues or pull requests
+- `body` - Description content
+- `path` - File path within repository
+- `content` - File content
+
+### Search Query Syntax
+
+For search tools, GitHub uses a special query syntax:
+
+**Repositories:**
+```
+"user:<username> is:private"  # Private repos
+"user:<username> language:python"  # Python repos
+```
+
+**Issues:**
+```
+"repo:<owner>/<repo> state:open"  # Open issues
+"repo:<owner>/<repo> label:bug"  # Issues with bug label
+```
+
+**Code:**
+```
+"function_name repo:<owner>/<repo>"  # Search code in specific repo
+"import requests language:python"  # Search Python code
+```
+
+For full search syntax documentation, see: https://docs.github.com/en/search-github

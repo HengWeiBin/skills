@@ -1,8 +1,8 @@
 # List private repositories
-alias github-privates='mcporter call github.search_repositories query:"user:HengWeiBin is:private"'
+alias github-privates='mcporter call github.search_repositories query:"user:<your-github-username> is:private"'
 
 # List all repositories
-alias github-repos='mcporter call github.search_repositories query:"user:HengWeiBin"'
+alias github-repos='mcporter call github.search_repositories query:"user:<your-github-username>"'
 
 # Search repositories
 alias github-search='mcporter call github.search_repositories'
