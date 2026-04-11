@@ -1,9 +1,9 @@
 ---
-name: github-mcp
+name: github-mcporter
 description: Use the GitHub MCP server via mcporter CLI to interact with GitHub repositories. Use when you need to list repositories, create issues, manage pull requests, search code, or perform any GitHub operations without remembering complex CLI commands. Triggers on phrases like "list my repos", "GitHub operations", "create GitHub issue", "search GitHub code", or when you need to interact with GitHub through the MCP server.
 ---
 
-# GitHub-MCP Skill
+# GitHub-MCPorter Skill
 
 ## Overview
 

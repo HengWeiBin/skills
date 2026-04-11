@@ -1,9 +1,9 @@
 ---
-name: notion-research
+name: notion-mcporter
 description: Record research notes to Notion using the Notion MCP server via mcporter. Use when you need to append research findings to an existing Notion page or create new research pages programmatically. Trigger this skill when the user provides a Notion page ID and wants to add structured research notes, summaries, or findings to their Notion workspace.
 ---
 
-# Notion Research Skill
+# Notion-MCPorter Skill
 
 Record research notes to Notion using the Notion MCP server via mcporter. Use when you need to append research findings to an existing Notion page or create new research pages programmatically. Trigger this skill when the user provides a Notion page ID and wants to add structured research notes, summaries, or findings to their Notion workspace.
 
